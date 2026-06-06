@@ -1,0 +1,127 @@
+.achievements {
+  background: var(--bg-secondary);
+}
+
+.achievements .timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.achievements .timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--gradient-1);
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.achievements .timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 0;
+  position: relative;
+  width: 50%;
+}
+
+.achievements .timeline-item:nth-child(odd) {
+  align-self: flex-start;
+  justify-content: flex-start;
+  padding-right: 40px;
+}
+
+.achievements .timeline-item:nth-child(even) {
+  margin-left: auto;
+  padding-left: 40px;
+}
+
+.achievements .timeline-dot {
+  position: absolute;
+  left: 50%;
+  top: 28px;
+  width: 16px;
+  height: 16px;
+  background: var(--accent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.achievements .timeline-item:nth-child(odd) .timeline-dot {
+  left: calc(100% + 32px);
+}
+
+.achievements .timeline-item:nth-child(even) .timeline-dot {
+  left: -8px;
+}
+
+.achievements .timeline-content {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  max-width: 340px;
+  transition: all 0.3s ease;
+}
+
+.achievements .timeline-content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 40px var(--accent-glow);
+  border-color: var(--accent);
+}
+
+.achievements .timeline-content .year {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: white;
+  background: var(--gradient-1);
+  margin-bottom: 10px;
+}
+
+.achievements .timeline-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.achievements .timeline-content p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .achievements .timeline::before {
+    left: 20px;
+  }
+
+  .achievements .timeline-item,
+  .achievements .timeline-item:nth-child(odd),
+  .achievements .timeline-item:nth-child(even) {
+    width: 100%;
+    padding: 20px 0 20px 50px;
+    margin: 0;
+  }
+
+  .achievements .timeline-dot,
+  .achievements .timeline-item:nth-child(odd) .timeline-dot,
+  .achievements .timeline-item:nth-child(even) .timeline-dot {
+    left: 12px;
+    top: 28px;
+  }
+
+  .achievements .timeline-content {
+    max-width: 100%;
+  }
+}
