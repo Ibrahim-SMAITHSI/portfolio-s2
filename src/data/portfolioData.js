@@ -54,7 +54,7 @@ export const projectsData = [
   {
     id: 9, title: 'Portfolio Pertama', category: 'web', tech: 'HTML, CSS, JavaScript',
     desc: 'Ini adalah web portfolio pertama saya yang dibuat menggunakan HTML, CSS, dan JavaScript. Web ini menampilkan informasi tentang diri saya, keterampilan, dan proyek-proyek yang telah saya buat.',
-    image: '/public/portfolio1.jpeg',
+    image: '/portfolio1.jpeg',
     demo: 'https://himeruthuathade.vercel.app/', github: 'https://github.com/Ibrahim-SMAITHSI/portfolio',
   },
   {
@@ -84,38 +84,38 @@ export const projectsData = [
   {
     id: 4, title: 'Aplikasi Penghitung Hafalan', category: 'react', tech: 'React',
     desc: 'Aplikasi React untuk membantu pengguna menghitung jumlah hafalan dengan fitur input dan tampilan hasil yang dinamis.',
-    image: '/public/penghitung-hafalan.jpeg',
+    image: '/penghitung-hafalan.jpeg',
     demo: 'https://total-hafalan-himeru-td.vercel.app/', github: 'https://github.com/Ibrahim-SMAITHSI/mini-project-bonus',
   },
   {
     id: 5, title: 'Apklikasi Card', category: 'react', tech: 'react',
     desc: 'Aplikasi React untuk menampilkan kartu informasi dengan desain yang menarik dan responsif.',
-    image: '/public/aplikasi-card.jpeg',
+    image: '/aplikasi-card.jpeg',
     demo: 'https://ibrahim-smaithsi.github.io/mini-project1/', github: 'https://github.com/Ibrahim-SMAITHSI/mini-project1',
   },
   {
     id: 6, title: 'To Do List', category: 'react', tech: 'React',
     desc: 'Aplikasi daftar tugas dengan fitur penambahan, penghapusan, dan penandaian tugas selesai.',
-    image: '/public/to-do-list.jpeg',
+    image: '/to-do-list.jpeg',
     demo: 'https://ibrahim-smaithsi.github.io/mini-project2/', github: 'https://github.com/Ibrahim-SMAITHSI/mini-project2',
   },
   {
     id: 7, title: 'Weather Dashboard', category: 'react', tech: 'React',
     desc: 'Aplikasi dashboard cuaca yang menampilkan informasi cuaca terkini berdasarkan lokasi pengguna dengan desain yang menarik.',
-    image: '/public/cuaca.jpeg',
+    image: '/cuaca.jpeg',
     demo: 'https://ibrahim-smaithsi.github.io/mini-project3/', github: 'https://github.com/Ibrahim-SMAITHSI/mini-project3',
   },
 ];
 
 export const galleryData = [
-  { id: 1, src: '/public/bakar-bakar.jpeg', alt: 'Bakar-bakar' },
-  { id: 2, src: '/public/bakar-bakar2.jpeg', alt: 'Bakar-bakar' },
-  { id: 3, src: '/public/global-english.jpeg', alt: 'Global English' },
-  { id: 4, src: '/public/global-english2.jpeg', alt: 'Global English' },
-  { id: 5, src: '/public/idul-adha.jpeg', alt: 'Idul Adha' },
-  { id: 6, src: '/public/idul-adha2.jpeg', alt: 'Idul Adha' },
-  { id: 7, src: '/public/jualan.jpeg', alt: 'Jualan' },
-  { id: 8, src: '/public/kereta.jpeg', alt: 'Kereta' },
+  { id: 1, src: '/bakar-bakar.jpeg', alt: 'Bakar-bakar' },
+  { id: 2, src: '/bakar-bakar2.jpeg', alt: 'Bakar-bakar' },
+  { id: 3, src: '/global-english.jpeg', alt: 'Global English' },
+  { id: 4, src: '/global-english2.jpeg', alt: 'Global English' },
+  { id: 5, src: '/idul-adha.jpeg', alt: 'Idul Adha' },
+  { id: 6, src: '/idul-adha2.jpeg', alt: 'Idul Adha' },
+  { id: 7, src: '/jualan.jpeg', alt: 'Jualan' },
+  { id: 8, src: '/kereta.jpeg', alt: 'Kereta' },
 ];
 
 export const socialLinks = [

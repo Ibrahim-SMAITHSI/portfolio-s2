@@ -44,7 +44,10 @@ export default function Gallery() {
         >
           {galleryData.map((item) => (
             <SwiperSlide key={item.id}>
-              <img src={item.src} alt={item.alt} />
+              <img
+                src={`${import.meta.env.BASE_URL}${item.src.replace(/^\//, '')}`}
+                alt={item.alt}
+              />
               <div className="slide-overlay">{item.alt}</div>
             </SwiperSlide>
           ))}

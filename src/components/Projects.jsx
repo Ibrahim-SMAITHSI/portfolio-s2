@@ -49,7 +49,11 @@ export default function Projects() {
               exit={{ opacity: 0, scale: 0.9, y: 30 }}
               transition={{ duration: 0.4 }}
             >
-              <img src={project.image} alt={project.title} className="card-image" />
+              <img
+                src={`${import.meta.env.BASE_URL}${project.image.replace(/^\//, '')}`}
+                alt={project.title}
+                className="card-image"
+              />
               <div className="card-body">
                 <h3>{project.title}</h3>
                 <p>{project.desc}</p>
